@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style4.css" type="text/css">
+    <title>Portfolio | Web Developer</title>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="container">
+        <div class="header-content">
+            <div class="logo"><span></span></div>
+            <nav>
+                <ul>
+                    <li><a href="#profile">Home</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#about">Informasi</a></li>
+                    <li><a href="#media">Media</a></li>
+                    <li><a href="#projects">Project</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+
+<main class="main-content">
+    
+    <!-- Profile Section -->
+    <section id="profile">
+        <div class="container">
+            <div class="about">
+                <div class="about-image">
+                    <img src="jirjat.jpeg" alt="Foto Profil">
+                </div>
+                <div class="about-content">
+                    <h2>Profil Saya</h2>
+                    <p><strong>Nama:</strong> Fajar Arkana Hafidz Burlian</p>
+                    <p><strong>Kelas:</strong> 01SIFP008</p>
+                    <p><strong>NIM:</strong> 251011700480</p>
+                    <p><strong>Domisili:</strong> Indonesia</p>
+                    <p>Saya adalah Mahasiswa dari Universitas Pamulang yang membuat website portofilio ini sebagai tugas untuk UAS dimatakuliah Pemrograman Web.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="about">
+                <div class="about-content">
+                    <h2>Tentang Saya</h2>
+                    <p>Saya adalah seorang web developer Pemula dan seorang mahasiswa yang baru mendalami cara untuk membuat dan mendesign Website. </p>
+                    <p>Berpengalaman dalam HTML, CSS, dan JavaScript serta terus belajar teknologi terbaru di dunia web.</p>
+                    <a href="#contact" class="btn">Hubungi Saya</a>
+                </div>
+                <div class="about-image2">
+                    <img src="background.jpg" alt="Foto Profil">
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- Media Section -->
+        <section id="media">
+            <div class="media-title">
+                <h2>Media</h2>
+            <div class="media-grid">
+
+    <!-- FOTO -->
+     <a href="cool dab.jpeg" target="_blank">
+    <img src="cool dab.jpeg" alt="media-1">
+     </a>
+     <a href="008.jpeg" target="_blank">
+    <img src="008.jpeg" alt="media-2">
+    </a>
+
+    <!-- VIDEO -->
+    <video controls>
+        <source src="laripagi.mp4" type="video/mp4">
+    </video>
+    <video controls>
+        <source src="fishit.mp4" type="video/mp4">
+    </video>
+
+    <!-- AUDIO -->
+    <div class="audio-card">
+        <div class="audio-icon">🎧</div>
+        <h3>Audio Portfolio</h3>
+        <p>Contoh audio / voice / musik</p>
+        <audio controls>
+            <source src="plan.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+</div>
+
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="section-title">
+                <h2>Project</h2>
+                <p>Beberapa project yang pernah saya kerjakan</p>
+            </div>
+            <div class="project-grid">
+                <div class="project-card">
+                    <a href="p9.png" target="_blank">
+                    <img src="p9.png" alt="project 1">
+                    </a>
+                    <h3>Hyperlink HTML</h3>
+                    <p>Membuat website menggunakan Hyperlink</p>
+                </div>
+                <div class="project-card">
+                    <a href="css.png" target="_blank">
+                    <img src="css.png" alt="project 2">
+                    </a>
+                    <h3>Mengenal CSS</h3>
+                    <p>Mengenal dasar-dasar CSS dalam pembuatan website.</p>
+                </div>
+                <div class="project-card">
+                    <a href="berita.png" target="_blank">
+                    <img src="berita.png" alt="project 3">
+                    </a>
+                    <h3>Mockup Berita</h3>
+                    <p>Membuat Mockup berita menggunakan html frameset</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="section-title">
+                <h2>Kontak</h2>
+                <p>Tertarik bekerja sama? Hubungi saya</p>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nama</label>
+                        <input type="text" id="name" placeholder="Nama Anda">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Email Anda">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Pesan</label>
+                        <textarea id="message" placeholder="Tulis pesan"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Kirim</button>
+                </form>
+            </div>
+        </section>
+
+    </div>
+</main>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="copyright">
+            <p>&copy; 2025 Fajar Arkana Hafidz Burlian - 251011700480 . The Man Trying his best.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // stop submit default
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    if (name === "" || email === "" || message === "") {
+        alert("⚠️ Harap isi semua data terlebih dahulu!");
+        return;
+    }
+
+    alert("✅ Pesan berhasil dikirim! Terima kasih sudah menghubungi saya.");
+
+    // reset form setelah sukses
+    this.reset();
+});
+</script>
+
+</body>
+</html>
